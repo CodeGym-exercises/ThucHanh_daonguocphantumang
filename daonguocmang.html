@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>đảo ngược phần tử của mảng</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let arr = [3,54,7,8,34,7];
+		document.write(arr);
+		let first = 0, last = arr.length-1;
+		while(first<last){
+			let temp=arr[first];
+			arr[first] = arr[last];
+			arr[last] = temp;
+			first++;
+			last--;
+		}
+		document.write("</br>"+arr);
+	</script>
+</body>
+</html>
